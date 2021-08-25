@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/mainGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_start"
+            android:icon="@drawable/ic_menu_home_24"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_menu_search_24"
+            android:title="@string/menu_search" />
+
+        <item
+            android:id="@+id/nav_myPurchases"
+            android:icon="@drawable/ic_menu_my_purchases_24"
+            android:title="@string/menu_myPurchases" />
+
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/ic_menu_favorite_24"
+            android:title="@string/menu_favorite" />
+
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_history_24"
+            android:title="@string/menu_history" />
+    </group>
+
+    <group
+        android:id="@+id/saleGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_resume"
+            android:icon="@drawable/ic_menu_resume_24"
+            android:title="@string/menu_resume" />
+
+        <item
+            android:id="@+id/nav_publish"
+            android:icon="@drawable/ic_menu_price_tag_24"
+            android:title="@string/menu_publish" />
+    </group>
+
+    <group
+        android:id="@+id/accountGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_account"
+            android:icon="@drawable/ic_menu_account_circle_24"
+            android:title="@string/menu_myAccount" />
+    </group>
+</menu>

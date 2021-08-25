@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_start">
+
+    <fragment
+        android:id="@+id/nav_start"
+        android:name="com.sgh21.finalproject.StartFragment"
+        android:label="@string/home_label"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/nav_account"
+        android:name="com.sgh21.finalproject.AccountFragment"
+        android:label="@string/myAccount_label"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/nav_favorite"
+        android:name="com.sgh21.finalproject.FavoriteFragment"
+        android:label="@string/favorite_label"
+        tools:layout="@layout/fragment_favorite" />
+    <fragment
+        android:id="@+id/nav_history"
+        android:name="com.sgh21.finalproject.HistoryFragment"
+        android:label="@string/history_label"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/nav_publish"
+        android:name="com.sgh21.finalproject.PublishFragment"
+        android:label="@string/publish_label"
+        tools:layout="@layout/fragment_publish" />
+    <fragment
+        android:id="@+id/nav_myPurchases"
+        android:name="com.sgh21.finalproject.PurchasesFragment"
+        android:label="@string/myPurchases_label"
+        tools:layout="@layout/fragment_purchases" />
+    <fragment
+        android:id="@+id/nav_resume"
+        android:name="com.sgh21.finalproject.ResumeFragment"
+        android:label="@string/resume_label"
+        tools:layout="@layout/fragment_resume" />
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.sgh21.finalproject.SearchFragment"
+        android:label="@string/search_label"
+        tools:layout="@layout/fragment_search" />
+</navigation>

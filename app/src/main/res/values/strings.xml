@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="Register">Registrar</string>
+    <string name="account_fragment">Cuenta: en este fragment aparecen varias opciones como, Mis datos en
+        donde podrá modificar los datos de la cuenta, Mis comentarios en donde se podra monitorear
+        los comentarios hechos en las publicaciones y las respuestas que han recibido estos comentarios
+        y salir en donde se puede desconectar la cuenta actual.</string>
+    <string name="app_name">Final Project</string>
+    <string name="coincidence_error">Las contraseñas no coinciden</string>
+    <string name="email">Correo electronico</string>
+    <string name="email_error">Correo electrónico invalido</string>
+    <string name="favorite_fragment">Favoritos: en este fragment aparece una lista de
+        todas las publicaciones que han sido registradas como favorito por el usuario.</string>
+    <string name="favorite_label">Favoritos</string>
+    <string name="form">Formulario</string>
+    <string name="history_fragment">Historial: en este fragment aparece una lista de
+        todas las publicaciones visitadas por el usuario en orden cronologico.</string>
+    <string name="history_label">Historial</string>
+    <string name="home_fragment">Inicio: en este fragment se mostrara una mezcla
+        de las ultimas busquedas y las busquedas marcadas como favoritas.</string>
+    <string name="home_label">Inicio</string>
+    <string name="last_name">Apellido</string>
+    <string name="last_name_error">Ingrese un apellido</string>
+    <string name="login">Iniciar sesion</string>
+    <string name="login_error">Correo electronico y/o contraseña incorrectos</string>
+    <string name="logout">Cerrar sesion</string>
+    <string name="menu_favorite">Favoritos</string>
+    <string name="menu_history">Historial</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_myAccount">Mi cuenta</string>
+    <string name="menu_myPurchases">Mis compras</string>
+    <string name="menu_publish">Publicar</string>
+    <string name="menu_resume">Resumen</string>
+    <string name="menu_search">Buscar</string>
+    <string name="myAccount_label">Mi cuenta</string>
+    <string name="myPurchases_label">Mis compras</string>
+    <string name="name">Nombre</string>
+    <string name="name_error">Ingrese un nombre</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="password">Contraseña</string>
+    <string name="password_error">La contraseña debe tener minimo 6 digitos</string>
+    <string name="password_errors">Las contraseñas son invalidas</string>
+    <string name="publish_fragment">Publicar: en este fragment se puede realizar nuevas publicaciones,
+        en este aparecen varios campos en los cuales el usuario puede personalizar e informar sobre
+        su publicacion.</string>
+    <string name="publish_label">Publicar</string>
+    <string name="purchases_fragment">Compras: en este fragment aparece una lista de
+        todas las compras realizadas en esta cuenta.</string>
+    <string name="question_account">¿No tienes cuenta?</string>
+    <string name="repeat_password">Repita contraseña</string>
+    <string name="required_field">Campo requerido</string>
+    <string name="resume_fragment">Resumen: en este fragment aparece una lista de las publicaciones
+        hechas por el usuario para vender algun producto o servicio y tambien aparece una lista con
+        los comentarios hechos en sus publicaciones ya sea pidiendo informacion o con otro algun motivo,
+        ademmas aparece un boton flotante con el cual se puede realizar una nueva publicacion.</string>
+    <string name="resume_label">Resumen</string>
+    <string name="search_fragment">Busqueda: en este fragment se abrira una barra de busqueda en
+        donde se colocara el nombre del producto que se quiere buscar y tambien se ira mostrando
+        las publicaciones relacionadas con el producto de busqueda.</string>
+    <string name="search_label">Buscar</string>
+    <string name="sign_up">
+        <u>Regístrese</u>
+    </string>
+    <string name="unregistered_user">No hay usuarios registrados</string>
+    <string name="user_email">example@correo.com</string>
+</resources>
