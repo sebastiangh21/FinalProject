@@ -1,4 +1,4 @@
-package com.sgh21.finalproject
+package com.sgh21.finalproject.ui
 
 import android.os.Bundle
 import android.view.LayoutInflater

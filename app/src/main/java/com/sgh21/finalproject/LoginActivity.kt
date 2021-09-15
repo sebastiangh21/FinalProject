@@ -14,6 +14,7 @@ import com.google.firebase.ktx.Firebase
 import com.sgh21.finalproject.VerificationUtils.EMPTY
 import com.sgh21.finalproject.VerificationUtils.minimumLength
 import com.sgh21.finalproject.VerificationUtils.validateEmail
+import com.sgh21.finalproject.data.User
 import com.sgh21.finalproject.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -33,10 +34,8 @@ class LoginActivity : AppCompatActivity() {
         auth = Firebase.auth
 
         loginBinding.loginButton.setOnClickListener {
-
             singIn()
-
-            val email = loginBinding.emailLoginEditText.text.toString()
+            /*val email = loginBinding.emailLoginEditText.text.toString()
             password = loginBinding.passwordEditText.text.toString()
             if(intent.extras != null){
                 user = intent.extras?.getSerializable("user") as User
@@ -47,7 +46,7 @@ class LoginActivity : AppCompatActivity() {
                 }
             }else{
                 Toast.makeText(this, getString(R.string.unregistered_user), Toast.LENGTH_SHORT).show()
-            }
+            }*/
         }
 
         loginBinding.emailLoginEditText.doAfterTextChanged {
@@ -82,13 +81,14 @@ class LoginActivity : AppCompatActivity() {
 
     private fun singIn() {
         val email = loginBinding.emailLoginEditText.text.toString()
-        val password = loginBinding.passwordEditText.text.toString()
+        password = loginBinding.passwordEditText.text.toString()
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener() { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d("login", "signInWithEmail:success")
                     val user = auth.currentUser
+                    goToMainActivity()
                     //updateUI(user)
                 } else {
                     var msg = ""
@@ -112,9 +112,9 @@ class LoginActivity : AppCompatActivity() {
         loginBinding.loginButton.isEnabled = check[0] && check[1]
     }
 
-    private fun mainactivity() {
+    private fun goToMainActivity() {
         val  intent = Intent(this, MainActivity::class.java)
-        intent.putExtra("user",user)
+        //intent.putExtra("user",user)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK or FLAG_ACTIVITY_CLEAR_TASK)
         startActivity(intent)
     }

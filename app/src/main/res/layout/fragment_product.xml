@@ -2,13 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frameLayout5"
+    android:id="@+id/frameLayout9"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.PublishFragment">
+    tools:context=".ui.ProductFragment">
+
 
     <ScrollView
-        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,10 +19,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/take_picture_image_view"
+                android:id="@+id/picture_product_image_view"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="8dp"
@@ -35,7 +36,7 @@
                 tools:ignore="ContentDescription" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -44,25 +45,23 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/take_picture_image_view" />
+                app:layout_constraintTop_toBottomOf="@+id/picture_product_image_view" />
 
-            <EditText
-                android:id="@+id/name_publish_edit_text"
+            <TextView
+                android:id="@+id/name_product_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:ems="10"
-                android:importantForAutofill="no"
-                android:inputType="textUri"
-                android:minHeight="48dp"
+                android:text="@string/name_product"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -71,25 +70,23 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name_publish_edit_text" />
+                app:layout_constraintTop_toBottomOf="@+id/name_product_text_view" />
 
-            <EditText
-                android:id="@+id/price_publish_edit_text"
+            <TextView
+                android:id="@+id/price_product_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:ems="10"
-                android:importantForAutofill="no"
-                android:inputType="number|numberDecimal"
-                android:minHeight="48dp"
+                android:text="@string/price_product"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView3"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -98,26 +95,23 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/price_publish_edit_text" />
+                app:layout_constraintTop_toBottomOf="@+id/price_product_text_view" />
 
-            <EditText
-                android:id="@+id/technical_specifications_publish_edit_text_multi_line"
+            <TextView
+                android:id="@+id/technical_specifications_product__text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:ems="10"
-                android:gravity="start|top"
-                android:importantForAutofill="no"
-                android:inputType="textMultiLine"
-                android:minHeight="48dp"
+                android:text="@string/technical_specifications"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView5"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/textView21"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -126,37 +120,45 @@
                 android:textColor="@color/black"
                 android:textSize="20sp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/technical_specifications_publish_edit_text_multi_line" />
+                app:layout_constraintTop_toBottomOf="@+id/technical_specifications_product__text_view" />
 
-            <EditText
-                android:id="@+id/description_publish_edit_text_multi_line"
+            <TextView
+                android:id="@+id/description_product_text_view"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
-                android:ems="10"
-                android:gravity="start|top"
-                android:importantForAutofill="no"
-                android:inputType="textMultiLine"
-                android:minHeight="48dp"
+                android:text="@string/description"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView8"
-                tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+                app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
             <Button
-                android:id="@+id/publish_button"
+                android:id="@+id/buy_product_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
-                android:text="@string/publish"
+                android:text="@string/buy"
                 android:textAllCaps="false"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/description_publish_edit_text_multi_line" />
+                app:layout_constraintTop_toBottomOf="@+id/description_product_text_view" />
+
+            <TextView
+                android:id="@+id/add_to_favorites_product_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_favorite"
+                android:text="@string/add_to_favorites"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buy_product_button"
+                tools:ignore="UseCompatTextViewDrawableXml" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

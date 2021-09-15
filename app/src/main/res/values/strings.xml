@@ -64,4 +64,32 @@
     </string>
     <string name="unregistered_user">No hay usuarios registrados</string>
     <string name="user_email">example@correo.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="phone">Telefono</string>
+    <string name="phone_error">Ingrese un telefono</string>
+    <string name="publication_name">Name:</string>
+    <string name="publication_price">Precio:</string>
+    <string name="publication_technical_specifications">Especificaciones Técnicas:</string>
+    <string name="publication_description">Descripcion:</string>
+    <string name="publish">Publicar</string>
+    <string name="empty_name">Ingrese el nombre del produccto</string>
+    <string name="empty_price">Ingrese el precio del producto</string>
+    <string name="empty_technical_specifications">Ingrese las especificaciones tecnicas del producto</string>
+    <string name="empty_description">Ingrese la descripcion del producto</string>
+    <string name="name_product">Nombre del producto</string>
+    <string name="price_product">Precio del producto</string>
+    <string name="publications">Publicaciones</string>
+    <string name="comments">Comentarios</string>
+    <string name="technical_specifications">Especificaciones Tecnicas</string>
+    <string name="description">Descripcion</string>
+    <string name="buy">Comprar</string>
+    <string name="add_to_favorites">Agregar a favoritos</string>
+    <string name="product_label">Producto</string>
+    <string name="remove_from_favorites">Quitar de favoritos</string>
+    <string name="empty_image">Tome una foto</string>
+    <string name="edit">Editar</string>
+    <string name="save">Guardar</string>
+    <string name="EditPublication">Editar publicacion</string>
+    <string name="successful_purchase">Compra realizada con exito</string>
 </resources>

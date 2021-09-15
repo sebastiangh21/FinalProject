@@ -7,42 +7,72 @@
 
     <fragment
         android:id="@+id/nav_start"
-        android:name="com.sgh21.finalproject.StartFragment"
+        android:name="com.sgh21.finalproject.ui.StartFragment"
         android:label="@string/home_label"
         tools:layout="@layout/fragment_start" />
     <fragment
         android:id="@+id/nav_account"
-        android:name="com.sgh21.finalproject.AccountFragment"
+        android:name="com.sgh21.finalproject.ui.AccountFragment"
         android:label="@string/myAccount_label"
         tools:layout="@layout/fragment_account" />
     <fragment
         android:id="@+id/nav_favorite"
-        android:name="com.sgh21.finalproject.FavoriteFragment"
+        android:name="com.sgh21.finalproject.ui.FavoriteFragment"
         android:label="@string/favorite_label"
-        tools:layout="@layout/fragment_favorite" />
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/action_nav_favorite_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_history"
-        android:name="com.sgh21.finalproject.HistoryFragment"
+        android:name="com.sgh21.finalproject.ui.HistoryFragment"
         android:label="@string/history_label"
         tools:layout="@layout/fragment_history" />
     <fragment
         android:id="@+id/nav_publish"
-        android:name="com.sgh21.finalproject.PublishFragment"
+        android:name="com.sgh21.finalproject.ui.PublishFragment"
         android:label="@string/publish_label"
         tools:layout="@layout/fragment_publish" />
     <fragment
         android:id="@+id/nav_myPurchases"
-        android:name="com.sgh21.finalproject.PurchasesFragment"
+        android:name="com.sgh21.finalproject.ui.PurchasesFragment"
         android:label="@string/myPurchases_label"
         tools:layout="@layout/fragment_purchases" />
     <fragment
         android:id="@+id/nav_resume"
-        android:name="com.sgh21.finalproject.ResumeFragment"
+        android:name="com.sgh21.finalproject.ui.resume.ResumeFragment"
         android:label="@string/resume_label"
-        tools:layout="@layout/fragment_resume" />
+        tools:layout="@layout/fragment_resume" >
+        <action
+            android:id="@+id/action_nav_resume_to_editProductFragment"
+            app:destination="@id/editProductFragment" />
+    </fragment>
     <fragment
         android:id="@+id/nav_search"
-        android:name="com.sgh21.finalproject.SearchFragment"
+        android:name="com.sgh21.finalproject.ui.SearchFragment"
         android:label="@string/search_label"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_nav_search_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.sgh21.finalproject.ui.ProductFragment"
+        android:label="@string/product_label"
+        tools:layout="@layout/fragment_product" >
+        <argument
+            android:name="product"
+            app:argType="com.sgh21.finalproject.data.Products" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProductFragment"
+        android:name="com.sgh21.finalproject.ui.EditProductFragment"
+        android:label="@string/EditPublication"
+        tools:layout="@layout/fragment_edit_product" >
+        <argument
+            android:name="product"
+            app:argType="com.sgh21.finalproject.data.Products" />
+    </fragment>
 </navigation>
